@@ -1,0 +1,24 @@
+{
+	"color": "#ffdd0000",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1633159864.json",
+	"mirror_portraits": false,
+	"name": "Developer",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		},
+		{
+			"name": "df-3",
+			"path": "res://addons/dialogic/Example Assets/portraits/df-3.png"
+		}
+	],
+	"scale": 100
+}

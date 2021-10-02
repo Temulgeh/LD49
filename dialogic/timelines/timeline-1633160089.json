@@ -1,0 +1,54 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi thank you for testing my game, I can 100% guaranty that there is no bugs and that the difficulty is perfectly balanced.\nHave fun ;) !"
+		},
+		{
+			"action": "join",
+			"character": "character-1633160146.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1633160146.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks, that sounds awesome :D !"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1633160089.json",
+		"name": "myFirstTimeline"
+	}
+}
