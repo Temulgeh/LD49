@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And I am back. Oh, you moved, didn't you- I told you not to move, what if you had caused another bug?"
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Then I would have had two bugs to fix; no need to fix something that never gets discovered."
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, I think I fixed it. Can you do that thing again?"
+		},
+		{
+			"emit_signal": "2Aend",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1633267525.json",
+		"name": "Level2A"
+	}
+}

@@ -49,6 +49,11 @@ func typeToCmd(cmd_text:String, typingTime, waitingTime, delay):
 		typed_char = 0
 		$Tween.start()
 
+
+func wrongCommand():
+	$AnimationPlayer.play("Wrong_command")
+
+
 func onCmdReturn():
 
 	$VBoxContainer/RichTextLabel.add_text("> ")
@@ -62,8 +67,8 @@ func onFinishedTyping():
 	$Timer.start()
 
 func sendReturnText(returnText:String):
-	$VBoxContainer/RichTextLabel.add_text("\n")
 	$VBoxContainer/RichTextLabel.add_text(returnText)
+	$VBoxContainer/RichTextLabel.add_text("\n")
 
 func openCmd():
 	if !isopen:
@@ -72,6 +77,7 @@ func openCmd():
 		$TweenOpen.interpolate_property(self, "rect_size", Vector2(0,0), size,0.3)
 		$TweenOpen.interpolate_property(self, "modulate", Color(1,1,1,0), Color(1,1,1,1),0.3)
 		$TweenOpen.start()
+		isopen = true
 
 
 func closeCmd(delay):

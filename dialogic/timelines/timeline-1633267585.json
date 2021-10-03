@@ -1,0 +1,39 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay nevermind."
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm gonna try something else so please, seriously don't move this time."
+		},
+		{
+			"emit_signal": "2Bend",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.5",
+		"file": "timeline-1633267585.json",
+		"name": "Level2B"
+	}
+}

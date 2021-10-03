@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Zicmu.mp3-4adf8d5b7a7a3edcc305d896582b0c92.mp3str"
+
+[deps]
+
+source_file="res://Global/Zicmu.mp3"
+dest_files=[ "res://.import/Zicmu.mp3-4adf8d5b7a7a3edcc305d896582b0c92.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
