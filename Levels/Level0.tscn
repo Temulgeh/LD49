@@ -27,7 +27,7 @@ frame = 1
 
 [node name="Door" parent="." instance=ExtResource( 5 )]
 position = Vector2( 869, 77 )
-next_level = "res://Levels/TestLevel.tscn"
+next_level = "res://Levels/Viewport1.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( -146.5, 72 )

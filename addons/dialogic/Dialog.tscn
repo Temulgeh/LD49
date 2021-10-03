@@ -18,7 +18,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-timeline = "timeline-1633185998.json"
+timeline = "timeline-1633263495.json"
 
 [node name="Portraits" type="Control" parent="."]
 anchor_left = 0.5
@@ -34,10 +34,10 @@ margin_top = -207.0
 margin_bottom = -40.0
 
 [node name="Options" type="VBoxContainer" parent="."]
-margin_left = 640.0
-margin_top = 360.0
-margin_right = 640.0
-margin_bottom = 360.0
+margin_left = 576.0
+margin_top = 324.0
+margin_right = 576.0
+margin_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1

@@ -45,6 +45,7 @@ var charge_timer: int
 var can_shoot: bool = true
 
 signal just_died
+signal charged_shot
 
 onready var display = $PlayerDisplay
 onready var gun = $PlayerDisplay/Gun
@@ -140,6 +141,7 @@ func _physics_process(delta):
 			velocity.x = -facing * OVERCHARGE_EXPLOSION_BOOST_STRENGTH
 			velocity.y = -JUMP_FORCE
 			CameraTracker.camera.shake(10)
+			emit_signal("charged_shot")
 	
 	if charge_timer:
 		var t = (OVERCHARGE_TIME * 2 - OVERCHARGE_TIME - charge_timer) / float(OVERCHARGE_TIME)
