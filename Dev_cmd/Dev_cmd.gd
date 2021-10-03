@@ -7,7 +7,7 @@ extends WindowDialog
 var cmd_text := "test"
 export var typed_char : int = 0
 signal command_sent
-var position : Vector2 = Vector2(100,100)
+var position : Vector2 = Vector2(700,300)
 var size : Vector2 = Vector2(370,218)
 var isopen := false
 signal cmd_just_opened
@@ -38,9 +38,10 @@ func typeToCmd(cmd_text:String, typingTime, waitingTime, delay):
 		if !isopen:
 			openCmd()
 			yield(self, "cmd_just_opened")
-		$TimerOC.wait_time = delay
-		$TimerOC.start()
-		yield($TimerOC, "timeout")
+		if delay > 0:
+			$TimerOC.wait_time = delay
+			$TimerOC.start()
+			yield($TimerOC, "timeout")
 		self.cmd_text = cmd_text
 		$Timer.wait_time = waitingTime
 		$Tween.interpolate_property(self, "typed_char", 0, cmd_text.length(), typingTime)
