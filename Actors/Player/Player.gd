@@ -44,8 +44,11 @@ var high_jumping: bool
 var charge_timer: int
 var can_shoot: bool = true
 
+var block_charge: bool
+
 signal just_died
 signal charged_shot
+signal move
 
 onready var display = $PlayerDisplay
 onready var gun = $PlayerDisplay/Gun
@@ -126,7 +129,7 @@ func _physics_process(delta):
 			velocity.x *= air_friction
 			velocity.x += direction * air_acceleration
 	
-	if Input.is_action_pressed("ui_accept") and can_shoot:
+	if Input.is_action_pressed("ui_accept") and can_shoot and not block_charge:
 		charge_timer += 1
 		if charge_timer >= OVERCHARGE_TIME:
 			gun.shoot(get_parent(), Vector2.RIGHT.rotated(-0.375) * facing, 3)
@@ -167,6 +170,7 @@ func _physics_process(delta):
 			velocity.x = 0
 	
 	if direction != 0:
+		emit_signal("move")
 		facing = direction
 	display.scale.x = facing
 	if charge_timer:
