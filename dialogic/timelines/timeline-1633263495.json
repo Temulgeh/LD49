@@ -1,6 +1,10 @@
 {
 	"events": [
 		{
+			"emit_signal": "0",
+			"event_id": "dialogic_040"
+		},
+		{
 			"action": "join",
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_002",
@@ -15,10 +19,22 @@
 			}
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Aseprite/sur_le_bureau.mp3",
+			"volume": 0
+		},
+		{
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "W- w- Wait what is going on here?!\nThis gun is definitely not supposed to be that powerful.\nWhat did you input? How did you trigger this?\nOh, wait is it the charged shot feature I just added yesterday?\nOh, no no no no-\nI can't leave this bug in the hands of a Player, this will totally ruin the balance of the levels!\nGive me a second to fix this, don't move an inch, I will be back."
+		},
+		{
+			"emit_signal": "1",
+			"event_id": "dialogic_040"
 		}
 	],
 	"metadata": {
