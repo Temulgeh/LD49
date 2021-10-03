@@ -1,0 +1,154 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://LevelElements/Block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Global/Camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Actors/Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LevelElements/CameraBlock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://LevelElements/Door/Door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Actors/FlyingEnemy/FlyingEnemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://LevelElements/CameraTriggerPoint.tscn" type="PackedScene" id=7]
+[ext_resource path="res://glow_env.tres" type="Environment" id=8]
+[ext_resource path="res://Aseprite/Controls.png" type="Texture" id=9]
+
+[node name="Level0" type="Node2D"]
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="Move" type="Sprite" parent="."]
+position = Vector2( -81, 67 )
+texture = ExtResource( 9 )
+vframes = 4
+
+[node name="Shoot" type="Sprite" parent="."]
+position = Vector2( 246, -18 )
+texture = ExtResource( 9 )
+vframes = 4
+frame = 1
+
+[node name="Door" parent="." instance=ExtResource( 5 )]
+position = Vector2( 869, 77 )
+next_level = "res://Levels/TestLevel.tscn"
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -146.5, 72 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="FlyingEnemy" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 282, -18 )
+
+[node name="FlyingEnemy2" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 312, -18 )
+second_bob_phase = true
+
+[node name="FlyingEnemy3" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 342, -18 )
+
+[node name="FlyingEnemy4" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 372, -18 )
+second_bob_phase = true
+
+[node name="FlyingEnemy5" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 560, 77 )
+bob_direction = Vector2( 1, 0 )
+
+[node name="FlyingEnemy7" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 665, -23 )
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( -198.112, 3.23039 )
+scale = Vector2( 2.22583, 15.4475 )
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 970, -9 )
+scale = Vector2( 4.73615, 11.5115 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 505, -120 )
+scale = Vector2( 77.274, 2.14026 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 548, 113 )
+scale = Vector2( 80, 2 )
+
+[node name="Block5" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 6, 84 )
+scale = Vector2( 4, 1 )
+
+[node name="Block7" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 66, 74 )
+scale = Vector2( 4, 2 )
+
+[node name="Block10" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 157, 67 )
+scale = Vector2( 2, 6 )
+
+[node name="Block14" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 185, 17 )
+scale = Vector2( 3, 1 )
+
+[node name="Block6" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 484, 78 )
+scale = Vector2( 3, 3 )
+
+[node name="Block12" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 682, 82 )
+scale = Vector2( 3, 3 )
+
+[node name="Block8" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 484, -54 )
+scale = Vector2( 3, 7 )
+
+[node name="Block9" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 713, 61 )
+scale = Vector2( 3, 4 )
+
+[node name="Block11" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 713, -98 )
+scale = Vector2( 3, 4 )
+
+[node name="Block13" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 822, -98 )
+scale = Vector2( 11.88, 4 )
+
+[node name="CameraBlocks" type="Node2D" parent="."]
+
+[node name="CameraBlock" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( 504, 128 )
+rotation = 3.14159
+scale = Vector2( 80, -2 )
+
+[node name="CameraBlock2" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( 500, -138 )
+rotation = 3.14159
+scale = Vector2( 80, -3 )
+
+[node name="CameraBlock3" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( -222, -12 )
+rotation = 3.14159
+scale = Vector2( 3, -30 )
+
+[node name="CameraBlock4" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( 967, -20 )
+rotation = 3.14159
+scale = Vector2( 3, -30 )
+
+[node name="CameraTriggers" type="Node2D" parent="."]
+visible = false
+
+[node name="CameraTrigger2" parent="CameraTriggers" instance=ExtResource( 7 )]
+position = Vector2( 569, -7 )
+scale = Vector2( 11.3953, 11.138 )
+point = Vector2( 570, 0 )
+weight = 0.8
+
+[node name="CameraTrigger" parent="CameraTriggers" instance=ExtResource( 7 )]
+position = Vector2( 275, 1.90735e-06 )
+scale = Vector2( -13.0549, 10.4849 )
+point = Vector2( 330, 0 )
+weight = 0.5
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 8 )

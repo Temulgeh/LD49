@@ -137,6 +137,7 @@ func _physics_process(delta):
 			charge_timer = 0
 			velocity.x = -facing * OVERCHARGE_EXPLOSION_BOOST_STRENGTH
 			velocity.y = -JUMP_FORCE
+			CameraTracker.camera.shake(10)
 	
 	if charge_timer:
 		var t = (OVERCHARGE_TIME * 2 - OVERCHARGE_TIME - charge_timer) / float(OVERCHARGE_TIME)
