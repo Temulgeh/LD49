@@ -1,13 +1,11 @@
 extends Control
-#
-#
-## Declare member variables here. Examples:
-## var a = 2
-## var b = "text"
+<<<<<<< HEAD
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
 var paused := false
-#
-## Called when the node enters the scene tree for the first time.
-#func _ready():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -43,8 +41,33 @@ func _input(event):
 func dieEvent():
 	$GameOver_menu.visible = true
 	get_tree().paused = true
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+=======
+#
+#
+## Declare member variables here. Examples:
+## var a = 2
+## var b = "text"
+#
+#
+## Called when the node enters the scene tree for the first time.
+#func _ready():
+#	var new_dialog = Dialogic.start('End_of_lvl1')
+#	add_child(new_dialog)
+#	$WindowDialog.openCmd()
+#	pass # Replace with function body.
+#
+#
+## Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+>>>>>>> d7c351743835238e5cb330aebaefdad28eab7bf0
 #	if $WindowDialog.isopen:
 #		$ViewportContainer/Viewport.gui_disable_input = true
 #	else:
 #		$ViewportContainer/Viewport.gui_disable_input = false
+<<<<<<< HEAD
 	pass
+=======
+>>>>>>> d7c351743835238e5cb330aebaefdad28eab7bf0

@@ -1,0 +1,45 @@
+[First charged shot]
+
+W- w- Wait what is going on here?!
+
+This gun is definitely not supposed to be that powerful
+What did you input? How did you trigger this?
+
+Oh, wait is it the charged shot feature I just added yesterday?
+Oh, no no no no
+I can't leave this bug in the hands of a Player, this will totally ruin the balance of the levels!
+Give me a second to fix this, don't move an inch, I will be back.
+
+
+[Solving a puzzle and moving to the second room]
+
+And I am back. Oh, you moved, didn't you- I told you not to move, what if you had caused another bug?
+Then I would have had two bugs to fix; no need to fix something that never gets discovered.
+Anyway, I think I fixed it. Can you do that thing again?
+
+
+[Bug still happens]
+
+Okay nevermind. I'm gonna try something else so please, seriously don't move this time.
+
+
+[Player moves a tiny bit]
+
+Don't. [places an obstacle? removes a platform in the middle of a lava lake? (but you can still clear the gap with the charged shot)]
+
+
+[???]
+
+Noo, there was a whole segment here where you would go down into a dungeon, and there was a huge physics puzzle with water and wind...
+Then you would have unlocked a new ability that would allow you to beat the boss, a huge dragon, there were 5 phases and- you just- jumped over it.
+
+
+[end]
+
+Okay, that's it. I've had enough. I've had enough of you ruining my game.
+If you had just listened to me, we could have had so much fun together, but you had to be like this.
+I'm done. I'm leaving. Have fun bouncing around with your stupid gun in this empty room. Goodbye.
+
+
+noCharge() - charge instantanée
+lessBullets()  - seulement 3 balles mais elles traversent les murs pour je ne sais quelle raison et sont 3 fois plus grandes
