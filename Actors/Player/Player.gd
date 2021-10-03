@@ -44,6 +44,8 @@ var high_jumping: bool
 var charge_timer: int
 var can_shoot: bool = true
 
+signal just_died
+
 onready var display = $PlayerDisplay
 onready var gun = $PlayerDisplay/Gun
 onready var animation_player = $AnimationPlayer
@@ -181,3 +183,4 @@ func jump():
 func get_hit_but_im_the_player():
 	if velocity.x < BOOSTING_THRESHOLD:
 		print("you died")
+		emit_signal("just_died")

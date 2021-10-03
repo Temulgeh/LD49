@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Menus/Main_menu/main_ui_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Menus/blurry_background.gdshader" type="Shader" id=2]
+[ext_resource path="res://Menus/Pause_menu/Pause_menu.gd" type="Script" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 2 )
+
+[node name="Pause_menu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 587.0
+margin_top = 323.0
+margin_right = 693.0
+margin_bottom = 397.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_resume" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_right = 106.0
+margin_bottom = 22.0
+text = "Resume Game"
+
+[node name="Button_back2main" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 26.0
+margin_right = 106.0
+margin_bottom = 48.0
+text = "Main menu"
+
+[node name="Button_exit" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 106.0
+margin_bottom = 74.0
+text = "Exit Game"
