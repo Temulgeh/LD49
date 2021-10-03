@@ -14,6 +14,8 @@ signal cmd_just_opened
 signal cmd_just_closed
 #var waitTime = 0.2
 
+onready var audio_player = $AudioStreamPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 #	visible = true
@@ -48,6 +50,7 @@ func typeToCmd(cmd_text:String, typingTime, waitingTime, delay):
 		$VBoxContainer/LineEdit.text = ""
 		typed_char = 0
 		$Tween.start()
+		audio_player.playing = true
 
 
 func wrongCommand():
@@ -64,6 +67,7 @@ func onCmdReturn():
 	emit_signal("command_sent")
 
 func onFinishedTyping():
+	audio_player.playing = false
 	$Timer.start()
 
 func sendReturnText(returnText:String):

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Actors/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Actors/Player/Gun.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Actors/Player/Player.png" type="Texture" id=3]
+[ext_resource path="res://Actors/Player/ChargeParticles.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3.95, 9.95 )
@@ -46,3 +47,7 @@ anims/PlayerBounce = SubResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 bus = "SFX"
+
+[node name="ChargeParticles" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4.91727, 0.293115 )
+scale = Vector2( 0.8, 1 )

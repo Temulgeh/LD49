@@ -22,7 +22,37 @@
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "W- w- Wait what is going on here?!\nThis gun is definitely not supposed to be that powerful.\nWhat did you input? How did you trigger this?\nOh, wait is it the charged shot feature I just added yesterday?\nOh, no no no no-\nI can't leave this bug in the hands of a Player, this will totally ruin the balance of the levels!\nGive me a second to fix this, don't move an inch, I will be back."
+			"text": "W- w- Wait what is going on here?!"
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This gun is definitely not supposed to be that powerful."
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What did you input? How did you trigger this?"
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, wait is it the charged shot feature I just added yesterday?"
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, no no no no- I can't leave this bug in the hands of a Player, this will totally ruin the balance of the levels!"
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Give me a second to fix this, don't move an inch, I will be back."
 		},
 		{
 			"emit_signal": "1",

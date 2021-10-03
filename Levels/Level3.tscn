@@ -1,0 +1,163 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://glow_env.tres" type="Environment" id=1]
+[ext_resource path="res://Global/Camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Actors/Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LevelElements/Door/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Levels/level2blocks.gd" type="Script" id=5]
+[ext_resource path="res://LevelElements/Block.tscn" type="PackedScene" id=6]
+[ext_resource path="res://LevelElements/CameraBlock.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Actors/FlyingEnemy/FlyingEnemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://LevelElements/GlitchBouncer.tscn" type="PackedScene" id=9]
+[ext_resource path="res://LevelElements/Lava.tscn" type="PackedScene" id=10]
+
+[node name="Level3" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 1 )
+
+[node name="Camera" parent="." instance=ExtResource( 2 )]
+
+[node name="Door" parent="." instance=ExtResource( 4 )]
+position = Vector2( 165, -421 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -147, 62 )
+
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2( 0, -1 )
+
+[node name="FlyingEnemy" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 42, 59 )
+bob_direction = Vector2( 1, 0 )
+
+[node name="FlyingEnemy6" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( -5, -197 )
+bob_direction = Vector2( 1, 0 )
+
+[node name="FlyingEnemy7" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( -4, -220 )
+bob_direction = Vector2( 1, 0 )
+
+[node name="FlyingEnemy8" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 33, -217 )
+bob_direction = Vector2( 1, 0 )
+second_bob_phase = true
+
+[node name="FlyingEnemy9" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 35, -197 )
+bob_direction = Vector2( 1, 0 )
+second_bob_phase = true
+
+[node name="FlyingEnemy3" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 41, 12 )
+bob_direction = Vector2( 1, 0 )
+second_bob_phase = true
+
+[node name="FlyingEnemy4" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 68, 35 )
+second_bob_phase = true
+
+[node name="FlyingEnemy5" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 17, 35 )
+second_bob_phase = true
+
+[node name="FlyingEnemy2" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 41, 35 )
+
+[node name="Lava" type="Node2D" parent="."]
+
+[node name="Lava" parent="Lava" instance=ExtResource( 10 )]
+position = Vector2( -32, -49 )
+scale = Vector2( 8.64, 1 )
+
+[node name="Lava2" parent="Lava" instance=ExtResource( 10 )]
+position = Vector2( -19, -286 )
+scale = Vector2( 8.64, 1 )
+
+[node name="Lava3" parent="Lava" instance=ExtResource( 10 )]
+position = Vector2( -140, -475 )
+scale = Vector2( 8.64, 1 )
+
+[node name="Blocks" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Block" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( -216, -177 )
+scale = Vector2( 3.57843, 32.8217 )
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( -13, 107 )
+scale = Vector2( 28.8184, 3.1817 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 75, -498 )
+scale = Vector2( 19.5384, 4.1417 )
+
+[node name="Block5" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 77, -383 )
+scale = Vector2( 14.2984, 2.2617 )
+
+[node name="Block6" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( -65, -265 )
+scale = Vector2( 14.2984, 2.2617 )
+
+[node name="Block7" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 82, -152 )
+scale = Vector2( 14.2984, 2.2617 )
+
+[node name="Block8" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( -81, -24 )
+scale = Vector2( 14.2984, 2.2617 )
+
+[node name="Block9" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 55, -45 )
+scale = Vector2( 0.778427, 2.2617 )
+
+[node name="Block10" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 70, -279 )
+scale = Vector2( 0.778427, 2.2617 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 200, -182 )
+scale = Vector2( 2.49843, 36.1017 )
+
+[node name="CameraBlocks" type="Node2D" parent="."]
+
+[node name="CameraBlock" parent="CameraBlocks" instance=ExtResource( 7 )]
+position = Vector2( -202, -185 )
+scale = Vector2( 1, 30 )
+
+[node name="CameraBlock2" parent="CameraBlocks" instance=ExtResource( 7 )]
+position = Vector2( 202, -188 )
+scale = Vector2( 1, 30 )
+
+[node name="CameraBlock3" parent="CameraBlocks" instance=ExtResource( 7 )]
+position = Vector2( 1, -492 )
+scale = Vector2( 25, 1 )
+
+[node name="CameraBlock4" parent="CameraBlocks" instance=ExtResource( 7 )]
+position = Vector2( 13, 118 )
+scale = Vector2( 25, 1 )
+
+[node name="GlitchBouncers" type="Node2D" parent="."]
+
+[node name="GlitchBouncer" parent="GlitchBouncers" instance=ExtResource( 9 )]
+position = Vector2( 125, 74 )
+scale = Vector2( 5.25032, 1.27856 )
+strength = 11.0
+
+[node name="GlitchBouncer2" parent="GlitchBouncers" instance=ExtResource( 9 )]
+position = Vector2( -132, -60 )
+scale = Vector2( 5.25032, 1.27856 )
+strength = 10.0
+
+[node name="GlitchBouncer3" parent="GlitchBouncers" instance=ExtResource( 9 )]
+position = Vector2( 135, -184 )
+scale = Vector2( 5.25032, 1.27856 )
+strength = 10.0
+
+[node name="GlitchBouncer4" parent="GlitchBouncers" instance=ExtResource( 9 )]
+position = Vector2( -128, -296 )
+scale = Vector2( 5.25032, 1.27856 )
+strength = 8.5

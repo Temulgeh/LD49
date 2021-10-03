@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/keyboard_noises.mp3-a213cc778dbe71120ea0cb4483fc24be.mp3str"
+
+[deps]
+
+source_file="res://Global/keyboard_noises.mp3"
+dest_files=[ "res://.import/keyboard_noises.mp3-a213cc778dbe71120ea0cb4483fc24be.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

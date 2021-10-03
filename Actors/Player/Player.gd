@@ -46,6 +46,7 @@ var can_shoot: bool = true
 
 var block_charge: bool
 var can_move: bool = true
+var actual_overcharge_time = OVERCHARGE_TIME
 
 signal just_died
 signal charged_shot
@@ -55,6 +56,9 @@ onready var display = $PlayerDisplay
 onready var gun = $PlayerDisplay/Gun
 onready var animation_player = $AnimationPlayer
 onready var audio_player = $AudioStreamPlayer
+
+var particles = preload("res://Actors/Player/ChargeParticles.tscn")
+var particles_instance = null
 
 
 func _input(event):
@@ -136,7 +140,14 @@ func _physics_process(delta):
 		
 		if Input.is_action_pressed("ui_accept") and can_shoot and not block_charge:
 			charge_timer += 1
-			if charge_timer >= OVERCHARGE_TIME:
+			if particles_instance == null:
+				particles_instance = particles.instance()
+				add_child(particles_instance)
+				particles_instance.emitting = true
+			if charge_timer >= actual_overcharge_time:
+				if particles_instance != null:
+					particles_instance.queue_free()
+					particles_instance = null
 				gun.shoot(get_parent(), Vector2.RIGHT.rotated(-0.375) * facing, 3)
 				gun.shoot(get_parent(), Vector2.RIGHT.rotated(-0.25) * facing, 3)
 				gun.shoot(get_parent(), Vector2.RIGHT.rotated(-0.125) * facing, 3)
@@ -184,6 +195,10 @@ func _physics_process(delta):
 			animation_player.playback_speed = 0
 		else:
 			animation_player.playback_speed = abs(velocity.x) * ANIMATION_SPEED_SLOPE + MIN_ANIMATION_SPEED
+	if charge_timer <= 0:
+		if particles_instance != null:
+			particles_instance.queue_free()
+			particles_instance = null
 
 
 func jump():
