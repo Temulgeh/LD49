@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/14.wav-8b8a609c6ee554e7859451c669bf124d.sample"
+
+[deps]
+
+source_file="res://VoiceClips/14.wav"
+dest_files=[ "res://.import/14.wav-8b8a609c6ee554e7859451c669bf124d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

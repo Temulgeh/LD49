@@ -19,6 +19,7 @@ environment = ExtResource( 1 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 160, 12 )
+next_level = "res://Levels/Viewport3.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( -151, 3 )

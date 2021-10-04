@@ -1,6 +1,107 @@
 {
 	"events": [
-
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/20.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, that's it."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/new21.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've had enough. I've had enough of you ruining my game."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/23.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you had just listened to me, we could have had so much fun together, but you had to be like this."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/new24.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm done. I'm leaving."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/26.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Have fun bouncing around with your stupid gun in this empty room."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/27.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Goodbye."
+		},
+		{
+			"emit_signal": "aaaaaa",
+			"event_id": "dialogic_040"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.2.5",

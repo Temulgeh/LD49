@@ -1,6 +1,55 @@
 {
 	"events": [
-
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"emit_signal": "0",
+			"event_id": "dialogic_040"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/18.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Noo, there was a whole segment here where you would go down into a dungeon, and there was a huge physics puzzle with water and wind..."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/19.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Then you would have unlocked a new ability that would allow you to beat the boss, a huge dragon, there were 5 phases and- you just- jumped over it."
+		},
+		{
+			"emit_signal": "1",
+			"event_id": "dialogic_040"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.2.5",

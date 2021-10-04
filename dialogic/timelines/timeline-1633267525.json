@@ -15,16 +15,40 @@
 			}
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/new8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "And I am back. Oh, you moved, didn't you- I told you not to move, what if you had caused another bug?"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/10.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Then I would have had two bugs to fix; no need to fix something that never gets discovered."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/11.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1633159864.json",

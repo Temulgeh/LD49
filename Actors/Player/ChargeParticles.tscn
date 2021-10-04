@@ -1,35 +1,24 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
-[sub_resource type="Gradient" id=1]
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.0140056, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0, 0.601796, 1 )
 colors = PoolColorArray( 17.34, 1.74, 0.58, 0, 13.29, 2.32, 0, 1, 24.28, 0, 0, 1 )
 
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
-
-[sub_resource type="Curve" id=3]
-_data = [ Vector2( 0.0140056, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
-
-[sub_resource type="CurveTexture" id=4]
-curve = SubResource( 3 )
-
-[sub_resource type="ParticlesMaterial" id=5]
-emission_shape = 1
-emission_sphere_radius = 78.39
-flag_disable_z = true
-gravity = Vector3( 0, 0, 0 )
-orbit_velocity = 0.01
-orbit_velocity_random = 0.0
-radial_accel = -300.0
-scale = 3.0
-scale_curve = SubResource( 4 )
-color_ramp = SubResource( 2 )
-
-[node name="ChargeParticles" type="Particles2D"]
+[node name="ChargeParticles" type="CPUParticles2D"]
 self_modulate = Color( 2, 2, 2, 1 )
 emitting = false
 amount = 100
 lifetime = 0.67
 one_shot = true
 explosiveness = 1.0
-process_material = SubResource( 5 )
+emission_shape = 1
+emission_sphere_radius = 78.39
+gravity = Vector2( 0, 0 )
+orbit_velocity = 0.01
+radial_accel = -300.0
+scale_amount = 3.0
+scale_amount_curve = SubResource( 1 )
+color_ramp = SubResource( 2 )

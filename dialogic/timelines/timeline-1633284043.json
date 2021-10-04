@@ -1,6 +1,33 @@
 {
 	"events": [
-
+		{
+			"action": "join",
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"audio": "play",
+			"audio_bus": "SCREAM",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/VOXScrm_Wilhelm scream (ID 0477)_BSB.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1633159864.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Distant scream)"
+		}
 	],
 	"metadata": {
 		"dialogic-version": "1.2.5",

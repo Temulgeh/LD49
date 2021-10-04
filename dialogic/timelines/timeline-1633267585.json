@@ -7,7 +7,7 @@
 			"mirror": false,
 			"portrait": "",
 			"position": {
-				"0": false,
+				"0": true,
 				"1": false,
 				"2": false,
 				"3": false,
@@ -15,10 +15,26 @@
 			}
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/12.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1633159864.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay nevermind."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Voice",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://VoiceClips/13.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1633159864.json",

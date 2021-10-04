@@ -22,7 +22,6 @@ void fragment()
 	COLOR = vec4(vec3(texture_color.rgb * mix(vec3(1.0), dark_color, gradient)), 1.0);
 }
 "
-custom_defines = ""
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = SubResource( 1 )

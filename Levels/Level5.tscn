@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://glow_env.tres" type="Environment" id=1]
+[ext_resource path="res://Levels/level2blocks.gd" type="Script" id=2]
+[ext_resource path="res://Global/Camera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LevelElements/CameraBlock.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Actors/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://LevelElements/Block.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Decoration/MissingTexture.tscn" type="PackedScene" id=7]
+[ext_resource path="res://glitch_shader.tres" type="Material" id=8]
+
+[node name="Level5" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 1 )
+
+[node name="Camera" parent="." instance=ExtResource( 3 )]
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( -147, 62 )
+
+[node name="Blocks" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Block" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( -216, -177 )
+scale = Vector2( 3.57843, 32.8217 )
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 209, -34 )
+scale = Vector2( 3.57843, 32.8217 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 13, 127 )
+scale = Vector2( 34.955, 4.0617 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 6 )]
+position = Vector2( 18, -133 )
+scale = Vector2( 34.955, 4.0617 )
+
+[node name="CameraBlocks" type="Node2D" parent="."]
+
+[node name="CameraBlock" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( -202, -185 )
+scale = Vector2( 1, 30 )
+
+[node name="CameraBlock2" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( 202, -188 )
+scale = Vector2( 1, 30 )
+
+[node name="CameraBlock3" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( -4, -118 )
+scale = Vector2( 25, 1 )
+
+[node name="CameraBlock4" parent="CameraBlocks" instance=ExtResource( 4 )]
+position = Vector2( 13, 118 )
+scale = Vector2( 25, 1 )
+
+[node name="TextureRect" parent="." instance=ExtResource( 7 )]
+margin_left = 63.0
+margin_top = -138.0
+margin_right = 136.0
+margin_bottom = -78.0
+rect_rotation = 11.5123
+rect_scale = Vector2( 2.16, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+material = ExtResource( 8 )
+margin_left = -41.676
+margin_top = 44.7399
+margin_right = 10.324
+margin_bottom = 131.74
+rect_rotation = 38.0085

@@ -35,9 +35,10 @@ texture = ExtResource( 9 )
 
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 213, 15 )
+next_level = "res://Levels/Viewport5.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
-position = Vector2( -151, 3 )
+position = Vector2( -147, 2 )
 
 [node name="Lava" parent="." instance=ExtResource( 2 )]
 position = Vector2( -134, 405 )
